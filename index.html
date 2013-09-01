@@ -34,3 +34,20 @@
 		<!-- /page -->
 	</body>
 </html>
+<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+
+	function onDeviceReady() {
+		document.addEventListener("pause", onPause, false);
+		document.addEventListener("resume", onResume, false);
+		alert("Device is Ready");
+	}
+
+	function onPause() {
+		alert("paused!");
+	}
+
+	function onResume() {
+		alert("resume");
+	}
+</script>
